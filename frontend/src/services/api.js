@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://sk-crm-server.onrender.com/api',
+  baseURL: 'https://sk-crm-server.onrender.com',
   headers: { 'Content-Type': 'application/json' },
 });
 
