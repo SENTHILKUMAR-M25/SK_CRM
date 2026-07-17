@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import DashboardLayout from './components/layout/DashboardLayout';
 import Login from './pages/auth/Login';
 import Dashboard from './pages/dashboard/Dashboard';
+import AnalyticsDashboard from './pages/analytics/AnalyticsDashboard';
 import LeadList from './pages/leads/LeadList';
 import LeadForm from './pages/leads/LeadForm';
 import LeadDetail from './pages/leads/LeadDetail';
@@ -28,7 +29,7 @@ export default function App() {
         <Route path="leads/create" element={<LeadForm />} />
         <Route path="leads/:id" element={<LeadDetail />} />
         <Route path="leads/:id/edit" element={<LeadForm />} />
-        <Route path="analytics" element={<PlaceholderPage title="Analytics" />} />
+        <Route path="analytics" element={<AnalyticsDashboard />} />
         <Route path="calendar" element={<PlaceholderPage title="Calendar" />} />
         <Route path="settings" element={<PlaceholderPage title="Settings" />} />
       </Route>
